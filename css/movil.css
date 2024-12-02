@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+}
+
+header .logo {
+    width: 50px;
+}
+
+header .barra ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .barra ul li {
+    margin: 0 10px;
+}
+
+header .barra ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.categories, .promotions, .bestsellers, .benefits {
+    padding: 10px 20px;
+}
+
+.categories h2, .promotions h2, .bestsellers h2, .benefits h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.categories div, .promotions div, .bestsellers div {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Media Query para pantallas móviles (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .barra ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .barra ul li {
+        margin: 5px 0;
+    }
+
+    .banner {
+        padding: 10px;
+    }
+
+    .categories div, .promotions div, .bestsellers div {
+        margin-bottom: 15px;
+    }
+
+    .categories img, .promotions img, .bestsellers img {
+        width: 100%; /* Ocupan todo el ancho disponible */
+        height: auto; /* Ajustan la altura proporcionalmente */
+    }
+
+    footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    footer .contac, footer .enlace, footer .redes {
+        margin-bottom: 10px;
+    }
+
+    footer .enlace ul {
+        padding: 0;
+    }
+}
+
+/* Media Query para pantallas muy pequeñas (max-width: 480px) */
+@media (max-width: 480px) {
+    header .iconos img {
+        width: 30px; /* Iconos más pequeños */
+    }
+
+    .banner h1 {
+        font-size: 18px;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
+    .categories div, .promotions div, .bestsellers div {
+        padding: 5px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
